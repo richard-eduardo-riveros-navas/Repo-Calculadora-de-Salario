@@ -1,14 +1,12 @@
 public class CalculadoraSalario {
-    public double calcularHorasExtras(int horasTrabajadas, double valorHora) {
-        int horasNormales = 40;
-        double pagoExtras = 0;
 
-        if (horasTrabajadas > horasNormales) {
-            int horasExtras = horasTrabajadas - horasNormales;
-            pagoExtras = horasExtras * valorHora * 1.5;
-        }
 
-        return pagoExtras;
+    public double calcularSalarioBase(double v, double h) {
+        return v * h;
     }
-    
+
+    public double calcularHorasExtra(double horas, double valor) {
+        return horas * valor * 1.5;
+    }
+
 }
