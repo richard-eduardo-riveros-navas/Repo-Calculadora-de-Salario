@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class CalculadoraSalarioCli {
 
     Scanner scanner = new Scanner(System.in);
+    CalculadoraSalario calc = new CalculadoraSalario();
 
     public void iniciar() {
         int opcion;
@@ -21,17 +22,13 @@ public class CalculadoraSalarioCli {
             switch (opcion) {
 
                 case 2:
-                    HorasExtras h = new HorasExtras();
-
                     System.out.print("Horas trabajadas: ");
                     int horas = scanner.nextInt();
 
                     System.out.print("Valor por hora: ");
                     double valor = scanner.nextDouble();
 
-                    double resultado = h.calcularHorasExtras(horas, valor);
-
-                    System.out.println("El pago por horas extra es: " + resultado);
+                    System.out.println("El pago por horas extra es: " + calc.calcularHorasExtras(horas, valor));
                     break;
 
                 case 5:
