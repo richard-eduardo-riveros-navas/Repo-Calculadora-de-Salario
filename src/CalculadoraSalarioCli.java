@@ -42,6 +42,13 @@ public class CalculadoraSalarioCli {
 
                     System.out.println("El pago por horas extra es: " + calc.calcularHorasExtra( horas, valor));
                     break;
+                case 3:
+                    System.out.print("Ingrese el salario base: ");
+                    double salarioBase = scanner.nextDouble();
+
+                    System.out.println("Los descuentos son: "
+                            + calc.calcularDescuentos(salarioBase));
+                    break;
                 case 5:
                     System.out.println("Saliendo...");
                     break;

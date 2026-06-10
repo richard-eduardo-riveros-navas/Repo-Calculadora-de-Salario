@@ -9,4 +9,11 @@ public class CalculadoraSalario {
         return horas * valor * 1.5;
     }
 
+    public double calcularDescuentos(double salarioBase) {
+        double salud = salarioBase * 0.04;
+        double pension = salarioBase * 0.04;
+
+        return salud + pension;
+    }
+
 }
