@@ -50,9 +50,9 @@ public class CalculadoraSalarioCli {
 
                 case 4:
                     System.out.print("Salario base: ");
-                    double salarioBase = scanner.nextDouble();
+                    salarioBase = scanner.nextDouble();
 
-                    System.out.print("Pago por horas extra: ");
+                    System.out.print("Pago total por horas extra: ");
                     double pagoExtras = scanner.nextDouble();
 
                     System.out.print("Descuentos: ");
