@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        CalculadoraSalarioCli calculadora = new CalculadoraSalarioCli();
+        CalculadoraSalarioCli menu = new CalculadoraSalarioCli();
         menu.iniciar();
     }
 }
